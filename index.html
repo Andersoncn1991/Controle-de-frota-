@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Frota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 Controle de Frota</h1>
+            <p>Sistema de gerenciamento de veículos</p>
+        </header>
+
+        <main>
+            <!-- Fleet Management Section -->
+            <section class="fleet-section">
+                <h2>Veículos da Frota</h2>
+                <div class="add-vehicle">
+                    <input type="text" id="vehiclePlate" placeholder="Placa do veículo">
+                    <input type="text" id="vehicleModel" placeholder="Modelo">
+                    <input type="number" id="vehicleYear" placeholder="Ano">
+                    <button onclick="addVehicle()">Adicionar Veículo</button>
+                </div>
+                <div id="vehicleList" class="vehicle-list"></div>
+            </section>
+
+            <!-- Ideas/Suggestions Section -->
+            <section class="ideas-section">
+                <h2>💡 Ideias e Sugestões</h2>
+                <p class="section-subtitle">Sempre mostrando ideias para melhorar sua gestão de frota</p>
+                <div id="ideasList" class="ideas-list"></div>
+                <button onclick="showMoreIdeas()" class="btn-more-ideas">Mostrar Mais Ideias</button>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="stats-section">
+                <h2>📊 Estatísticas</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 id="totalVehicles">0</h3>
+                        <p>Total de Veículos</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="totalIdeas">0</h3>
+                        <p>Ideias Exibidas</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Controle de Frota - Sistema de Gestão de Veículos</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
